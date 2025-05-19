@@ -72,7 +72,7 @@ The dataset enables training process reward models that can provide interpretabl
 Web-Shepherd is a process reward model trained on the WebPRM Collection to provide step-level feedback for web navigation tasks. Key components include:
 
 - **Checklist Generation**: Processes text and visual inputs from web pages
-- **Reward Prediction based on the Checklist**: Incorporates structured evaluation criteria
+- **Reward Prediction with Checklist**: Incorporates structured evaluation criteria
 
 The model achieves strong performance while being significantly more cost-efficient than alternatives like GPT-4o.
 
