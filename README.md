@@ -1,44 +1,46 @@
 # 🐑 WEB-SHEPHERD: Process Reward Modeling for Web Agents
 
-**WEB-SHEPHERD** is the first dedicated **Process Reward Model (PRM)** for web agents, enabling fine-grained, step-level evaluation of web navigation trajectories. This project includes:
+[![Paper](https://img.shields.io/badge/Paper-NeurIPS--2025-informational)](https://openreview.net/forum?id=YOUR_ID)
+[![Hugging Face Demo](https://img.shields.io/badge/Demo-HuggingFace-blue)](https://huggingface.co/spaces/WebShepherd/Project-Web-Shepherd)
 
-- **WEBPRM COLLECTION**: A large-scale dataset of 40K step-level annotations with expert and rejected actions across diverse web tasks.
-- **WEBREWARDBENCH**: The first benchmark for evaluating PRMs on web navigation.
-- **WEB-SHEPHERD Model**: A reward model trained to evaluate step-level progress using structured checklists.
+WEB-SHEPHERD is the **first process reward model (PRM)** designed specifically for web agents. It evaluates trajectories at the step level to provide interpretable and cost-efficient feedback for both learning and inference-time decision making in web navigation tasks.
 
-[[📚 Paper (NeurIPS 2025 submission)](https://hf.co/spaces/WebShepherd/Project-Web-Shepherd)]
+---
 
-## 🚀 Highlights
+## 🚀 Overview
 
-- **Cost-efficient**: 10× cheaper than GPT-4o-mini while achieving better performance.
-- **Structured reward modeling**: Checklist-based process evaluation enables dense, interpretable feedback.
-- **Generalizable**: Applicable across domains (shopping, travel, CMS, etc.) and difficulty levels (easy to hard).
-- **Improves web agent performance**: Boosts GPT-4o-mini's WebArena-lite success rate by +10.9 points.
+Recent multimodal language models (MLLMs) have made progress in web automation but struggle with long-horizon planning and cost efficiency. To tackle this, WEB-SHEPHERD introduces:
 
-## 🧱 Components
+- **WEBPRM COLLECTION**: A dataset with 40K+ step-level preference annotations and structured checklists.
+- **WEBREWARDBENCH**: A benchmark to test PRM effectiveness across diverse web tasks.
+- **WEB-SHEPHERD**: A PRM trained to provide step-wise feedback and reward using structured subgoal checklists.
 
-### 1. WEBPRM COLLECTION
-A dataset of:
-- Human-written instructions
-- Expert and rejected trajectories
-- Structured checklists (subgoals)
-- Annotated rewards per step
+---
 
-### 2. WEBREWARDBENCH
-Evaluation suite with:
-- Preference-labeled action pairs
-- Metrics: MRR (step), Accuracy (step/traj)
-- Cross-domain and cross-task generalization
+## 🧠 Key Features
 
-### 3. WEB-SHEPHERD Model
-- Text-only and multimodal variants (Qwen2.5-3B, 8B, VL-3B)
-- Trained via next-token prediction with verbalized reward outputs
-- LoRA + LLaMA-Factory compatible training pipeline
+- ✅ Step-level trajectory evaluation for web agents
+- 🧾 Checklist-guided reward modeling for interpretability
+- 💰 10× cost reduction compared to prompting GPT-4o
+- 📈 Outperforms GPT-4o-mini by **10.9 points** on WebArena-lite
+- 🔄 Supports both reward assignment and agent refinement
 
-## 📦 Installation
+---
+
+## 📂 Project Structure
 
 ```bash
-git clone https://github.com/<your-org>/web-shepherd.git
-cd web-shepherd
-conda env create -f environment.yml
-conda activate webshepherd
+.
+├── webshepherd/                 # Source code for the model
+│   ├── models/                  # Model architecture & training
+│   ├── data/                    # Dataset loading and processing
+│   └── inference/               # Inference utilities (e.g., Best-of-n, feedback)
+├── scripts/                     # Training & evaluation scripts
+├── configs/                     # Model configs and experiment settings
+├── data/                        # Downloaded or generated datasets
+│   ├── webprm_collection/       # Annotated instructions, checklists, and actions
+│   └── webrewardbench/          # Meta-evaluation benchmark
+├── demo/                        # Hugging Face Space setup (optional)
+├── results/                     # Logs and evaluation outputs
+└── README.md
+```
