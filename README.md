@@ -22,7 +22,7 @@ Web-Shepherd is the **first process reward model (PRM)** designed specifically f
 
 ## 🚀 Overview
 
-Recent multimodal language models (MLLMs) have made progress in web automation but struggle with long-horizon planning and cost efficiency. To tackle this, WEB-SHEPHERD introduces:
+Recent multimodal language models (MLLMs) have made progress in web automation but struggle with long-horizon planning and cost efficiency. To tackle this, Web-Shepherd introduces:
 
 - **WebPRM Collectionn**: A dataset with 40K+ step-level preference annotations and structured checklists.
 - **WebRewardBench**: A benchmark to test PRM effectiveness across diverse web tasks.
@@ -46,8 +46,9 @@ Recent multimodal language models (MLLMs) have made progress in web automation b
 |----------|-------------|------|------|
 | WebPRM Collection | Step-level preference annotations with structured checklists | 40K+ annotations | [🤗 huggingface](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_preference_pair) |
 | WebRewardBench | Comprehensive benchmark for evaluating PRM effectiveness | 1000+ test cases | [🤗 huggingface](https://huggingface.co/datasets/LangAGI-Lab/WebRewardBench) |
-| Web-Shepherd Model | Trained process reward model for web navigation | 350M parameters | [🤗 huggingface](https://huggingface.co/WebShepherd/web-shepherd-base) |
-| Web-Shepherd Large | Enhanced version with improved performance | 1.3B parameters | [🤗 huggingface](https://huggingface.co/WebShepherd/web-shepherd-large) |
+| Web-Shepherd (3B, text-only) | Trained process reward model for web navigation | 350M parameters | [🤗 huggingface](https://huggingface.co/WebShepherd/web-shepherd-base) |
+| Web-Shepherd (3B, 🖼️ multimodal) | Trained process reward model for web navigation | 350M parameters | [🤗 huggingface](https://huggingface.co/WebShepherd/web-shepherd-base) |
+| Web-Shepherd (8B, text-only) | Enhanced version with improved performance | 1.3B parameters | [🤗 huggingface](https://huggingface.co/WebShepherd/web-shepherd-large) |
 
 
 ## 📂 Project Structure
