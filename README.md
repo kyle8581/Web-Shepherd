@@ -13,7 +13,8 @@
 <!-- [![Paper](https://img.shields.io/badge/Paper-Preprint-informational?logo=arxiv)](assets/WebShepherd.pdf) -->
 <!-- [![arXiv](https://img.shields.io/badge/arXiv-Preprint-red?logo=arxiv)](assets/WebShepherd.pdf) -->
 [![PDF](https://img.shields.io/badge/PDF-Preprint-red?logo=arxiv)](assets/WebShepherd.pdf)
-[![Model](https://img.shields.io/badge/Model-HuggingFace-informational?logo=huggingface)](https://huggingface.co/WebShepherd/web-shepherd-base)
+[![Model](https://img.shields.io/badge/Model-HuggingFace-informational?logo=huggingface)](https://huggingface.co/collections/LangAGI-Lab/web-shepherd-advancing-prms-for-reinforcing-web-agents-682b4f4ad607fc27c4dc49e8)
+[![Dataset](https://img.shields.io/badge/Model-HuggingFace-informational?logo=huggingface)](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_preference_pair)
 [![Hugging Face Demo](https://img.shields.io/badge/Demo-Huggingface-blue.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEiIHdpZHRoPSI2MDAiIGhlaWdodD0iNjAwIj48cGF0aCBkPSJNMTI5IDExMWMtNTUgNC05MyA2Ni05MyA3OEwwIDM5OGMtMiA3MCAzNiA5MiA2OSA5MWgxYzc5IDAgODctNTcgMTMwLTEyOGgyMDFjNDMgNzEgNTAgMTI4IDEyOSAxMjhoMWMzMyAxIDcxLTIxIDY5LTkxbC0zNi0yMDljMC0xMi00MC03OC05OC03OGgtMTBjLTYzIDAtOTIgMzUtOTIgNDJIMjM2YzAtNy0yOS00Mi05Mi00MmgtMTV6IiBmaWxsPSIjZmZmIi8+PC9zdmc+)](https://huggingface.co/spaces/WebShepherd/Project-Web-Shepherd)
 
 Web-Shepherd is the **first process reward model (PRM)** designed specifically for web agents. It evaluates trajectories at the step level to provide interpretable and cost-efficient feedback for both learning and inference-time decision making in web navigation tasks.
@@ -24,7 +25,7 @@ Web-Shepherd is the **first process reward model (PRM)** designed specifically f
 
 Recent multimodal language models (MLLMs) have made progress in web automation but struggle with long-horizon planning and cost efficiency. To tackle this, Web-Shepherd introduces:
 
-- **WebPRM Collectionn**: A dataset with 40K+ step-level preference annotations and structured checklists.
+- **WebPRM Collection**: A dataset with 40K+ step-level preference annotations and structured checklists.
 - **WebRewardBench**: A benchmark to test PRM effectiveness across diverse web tasks.
 - **Web-Shepherd**: A PRM trained to provide step-wise feedback and reward using structured subgoal checklists.
 
