@@ -1,7 +1,14 @@
-<p align="left">
-  <img src="assets/shepherd_emoji.png" alt="WEB-SHEPHERD Logo" width="100" style="vertical-align: bottom"/>
-  <span style="font-size: 3em; font-weight: bold; vertical-align: middle; margin-left: 10px">Web-Shepherd: Advancing Process Reward Models for Web Agents</span>
-</p>
+<!-- <p align="left">
+  <img src="assets/shepherd_emoji.png" alt="WEB-SHEPHERD Logo" width="100" style="vertical-align: middle; display: inline-block; margin-right: 10px"/>
+  <h1 style="font-weight: bold; margin: 0; display: inline-block; vertical-align: middle">Web-Shepherd: Advancing Process Reward Models for Web Agents</h1>
+</p> -->
+<table>
+<tr>
+<td><img src="assets/shepherd_emoji.png" alt="WEB-SHEPHERD Logo" width="150"/></td>
+<td><h1 style="margin: 0;">Web-Shepherd: Advancing Process Reward Models for Web Agents</h1></td>
+</tr>
+</table>
+
 
 <!-- [![Paper](https://img.shields.io/badge/Paper-Preprint-informational?logo=arxiv)](assets/WebShepherd.pdf) -->
 <!-- [![arXiv](https://img.shields.io/badge/arXiv-Preprint-red?logo=arxiv)](assets/WebShepherd.pdf) -->
