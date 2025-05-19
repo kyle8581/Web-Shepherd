@@ -39,6 +39,10 @@ Recent multimodal language models (MLLMs) have made progress in web automation b
 - 📈 Outperforms GPT-4o-mini by **10.9 points** on WebArena-lite
 - 🔄 Various use cases, including RL, Trajectory Search, and Reflexion
 
+<p align="center">
+  <img src="assets/Figure_performance.png" alt="WebPRM Collection Overview" width="100%"/>
+</p>
+
 ---
 
 ## 💎 Assets
@@ -48,7 +52,7 @@ Recent multimodal language models (MLLMs) have made progress in web automation b
 | WebPRM Collection | Step-level preference annotations with structured checklists | 40K+ annotations | [🤗 huggingface](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_preference_pair) |
 | WebRewardBench | Comprehensive benchmark for evaluating PRM effectiveness | 1000+ test cases | [🤗 huggingface](https://huggingface.co/datasets/LangAGI-Lab/WebRewardBench) |
 | Web-Shepherd (3B, text-only) | Trained process reward model for web navigation | 3B parameters | [🤗 huggingface](https://huggingface.co/WebShepherd/web-shepherd-base) |
-| Web-Shepherd (3B, 🖼️ multimodal) | Trained process reward model for web navigation | 350M parameters | [Coming Soon!]() |
+| Web-Shepherd (3B, 🖼️ multimodal) | Trained process reward model for web navigation | 3B parameters | [Coming Soon!]() |
 | Web-Shepherd (8B, text-only) | Large version of Web-Shepherd | 8B parameters | [🤗 huggingface](https://huggingface.co/WebShepherd/web-shepherd-large) |
 
 ## WebPRM Collection
