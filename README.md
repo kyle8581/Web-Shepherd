@@ -1,9 +1,16 @@
-# 🐑 WEB-SHEPHERD: Advancin Process Reward Models for Web Agents
+<p align="left">
+  <img src="assets/shepherd_emoji.png" alt="WEB-SHEPHERD Logo" width="120"/>
+  <span style="font-size: 24px; font-weight: bold; vertical-align: middle; margin-left: 10px">Web-Shepherd: Advancing Process Reward Models for Web Agents</span>
+</p>
 
-[![Paper](https://img.shields.io/badge/Paper-NeurIPS--2025-informational)](https://openreview.net/forum?id=YOUR_ID)
-[![Hugging Face Demo](https://img.shields.io/badge/Demo-HuggingFace-blue)](https://huggingface.co/spaces/WebShepherd/Project-Web-Shepherd)
+<!-- [![Paper](https://img.shields.io/badge/Paper-Preprint-informational?logo=arxiv)](assets/WebShepherd.pdf) -->
+<!-- [![arXiv](https://img.shields.io/badge/arXiv-Preprint-red?logo=arxiv)](assets/WebShepherd.pdf) -->
+[![PDF](https://img.shields.io/badge/PDF-Preprint-red?logo=arxiv)](assets/WebShepherd.pdf)
 
-WEB-SHEPHERD is the **first process reward model (PRM)** designed specifically for web agents. It evaluates trajectories at the step level to provide interpretable and cost-efficient feedback for both learning and inference-time decision making in web navigation tasks.
+[![Model](https://img.shields.io/badge/Model-HuggingFace-informational?logo=huggingface)](https://huggingface.co/WebShepherd/web-shepherd-base)
+[![Hugging Face Demo](https://img.shields.io/badge/Demo-Huggingface-blue.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEiIHdpZHRoPSI2MDAiIGhlaWdodD0iNjAwIj48cGF0aCBkPSJNMTI5IDExMWMtNTUgNC05MyA2Ni05MyA3OEwwIDM5OGMtMiA3MCAzNiA5MiA2OSA5MWgxYzc5IDAgODctNTcgMTMwLTEyOGgyMDFjNDMgNzEgNTAgMTI4IDEyOSAxMjhoMWMzMyAxIDcxLTIxIDY5LTkxbC0zNi0yMDljMC0xMi00MC03OC05OC03OGgtMTBjLTYzIDAtOTIgMzUtOTIgNDJIMjM2YzAtNy0yOS00Mi05Mi00MmgtMTV6IiBmaWxsPSIjZmZmIi8+PC9zdmc+)](https://huggingface.co/spaces/WebShepherd/Project-Web-Shepherd)
+
+Web-Shepherd is the **first process reward model (PRM)** designed specifically for web agents. It evaluates trajectories at the step level to provide interpretable and cost-efficient feedback for both learning and inference-time decision making in web navigation tasks.
 
 ---
 
@@ -11,9 +18,9 @@ WEB-SHEPHERD is the **first process reward model (PRM)** designed specifically f
 
 Recent multimodal language models (MLLMs) have made progress in web automation but struggle with long-horizon planning and cost efficiency. To tackle this, WEB-SHEPHERD introduces:
 
-- **WEBPRM COLLECTION**: A dataset with 40K+ step-level preference annotations and structured checklists.
-- **WEBREWARDBENCH**: A benchmark to test PRM effectiveness across diverse web tasks.
-- **WEB-SHEPHERD**: A PRM trained to provide step-wise feedback and reward using structured subgoal checklists.
+- **WebPRM Collectionn**: A dataset with 40K+ step-level preference annotations and structured checklists.
+- **WebRewardBench**: A benchmark to test PRM effectiveness across diverse web tasks.
+- **Web-Shepherd**: A PRM trained to provide step-wise feedback and reward using structured subgoal checklists.
 
 ---
 
@@ -21,11 +28,21 @@ Recent multimodal language models (MLLMs) have made progress in web automation b
 
 - ✅ Step-level trajectory evaluation for web agents
 - 🧾 Checklist-guided reward modeling for interpretability
-- 💰 10× cost reduction compared to prompting GPT-4o
+- 💰 100× cost reduction compared to prompting GPT-4o
 - 📈 Outperforms GPT-4o-mini by **10.9 points** on WebArena-lite
 - 🔄 Supports both reward assignment and agent refinement
 
 ---
+
+## 💎 Assets
+
+| Resource | Description | Size | Link |
+|----------|-------------|------|------|
+| WebPRM Collection | Step-level preference annotations with structured checklists | 40K+ annotations | [🤗 huggingface](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_preference_pair) |
+| WebRewardBench | Comprehensive benchmark for evaluating PRM effectiveness | 1000+ test cases | [🤗 huggingface](https://huggingface.co/datasets/LangAGI-Lab/WebRewardBench) |
+| Web-Shepherd Model | Trained process reward model for web navigation | 350M parameters | [🤗 huggingface](https://huggingface.co/WebShepherd/web-shepherd-base) |
+| Web-Shepherd Large | Enhanced version with improved performance | 1.3B parameters | [🤗 huggingface](https://huggingface.co/WebShepherd/web-shepherd-large) |
+
 
 ## 📂 Project Structure
 
