@@ -33,10 +33,10 @@ Recent multimodal language models (MLLMs) have made progress in web automation b
 ## 🧠 Key Features
 
 - ✅ Step-level trajectory evaluation for web agents
-- 🧾 Checklist-guided reward modeling for interpretability
+- 🧾 Checklist-guided reward modeling for interpretability and progress awareness
 - 💰 100× cost reduction compared to prompting GPT-4o
 - 📈 Outperforms GPT-4o-mini by **10.9 points** on WebArena-lite
-- 🔄 Supports both reward assignment and agent refinement
+- 🔄 Various use cases, including RL, Trajectory Search, and Reflexion
 
 ---
 
@@ -50,6 +50,30 @@ Recent multimodal language models (MLLMs) have made progress in web automation b
 | Web-Shepherd (3B, 🖼️ multimodal) | Trained process reward model for web navigation | 350M parameters | [🤗 huggingface](https://huggingface.co/WebShepherd/web-shepherd-base) |
 | Web-Shepherd (8B, text-only) | Enhanced version with improved performance | 1.3B parameters | [🤗 huggingface](https://huggingface.co/WebShepherd/web-shepherd-large) |
 
+## WebPRM Collection
+<p align="center">
+  <img src="assets/Figure_WPRMCollection.png" alt="WebPRM Collection Overview" width="100%"/>
+</p>
+
+The WebPRM Collection contains over 40K step-level preference annotations across diverse web tasks. Each annotation includes:
+
+- **Structured Checklists**: Task-specific criteria for evaluating step quality
+- **Step-level Preferences**: Human annotations comparing trajectory steps
+- **Rich Metadata**: Task context, action types, and rationales
+
+The dataset enables training process reward models that can provide interpretable feedback for web navigation.
+
+## Web-Shepherd
+<p align="center">
+  <img src="assets/Figure_WebShepherd.png" alt="Web-Shepherd Architecture" width="100%"/>
+</p>
+
+Web-Shepherd is a process reward model trained on the WebPRM Collection to provide step-level feedback for web navigation tasks. Key components include:
+
+- **Checklist Generation**: Processes text and visual inputs from web pages
+- **Reward Prediction based on the Checklist**: Incorporates structured evaluation criteria
+
+The model achieves strong performance while being significantly more cost-efficient than alternatives like GPT-4o.
 
 ## 📂 Project Structure
 
