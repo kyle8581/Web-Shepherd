@@ -1,4 +1,4 @@
-# 🐑 WEB-SHEPHERD: Process Reward Modeling for Web Agents
+# 🐑 WEB-SHEPHERD: Advancin Process Reward Models for Web Agents
 
 [![Paper](https://img.shields.io/badge/Paper-NeurIPS--2025-informational)](https://openreview.net/forum?id=YOUR_ID)
 [![Hugging Face Demo](https://img.shields.io/badge/Demo-HuggingFace-blue)](https://huggingface.co/spaces/WebShepherd/Project-Web-Shepherd)
